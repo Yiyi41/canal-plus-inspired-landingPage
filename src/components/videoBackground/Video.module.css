@@ -1,109 +1,116 @@
 .videoBackground {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1;
-  }
-  
-  .video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.95;
-  }
-  
-  .highlightCallWrapper {
-    /* border: 1px solid red; */
-    width: 100%;
-    height: 100%;
-    padding: 110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    color: white;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-  
-  .highlightCallContent {
-    height: 30%;
-  }
-  
-  .highlightCallTitle {
-    font-family: "Canal+";
-    text-transform: uppercase;
-    font-size: 30px;
-  }
-  
-  .highlightCallDetail {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 18px;
-    margin: 20px auto;
-  }
-  
-  .btnWrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .highlightCallBtn {
-    background-color: #ec3655;
-    border-radius: 4px;
-    color: rgb(245, 245, 245);
-    display: flex;
-    align-items: center;
-    font-family: "Canal+";
-    font-size: 18px;
-    padding: 0 16px;
-    text-transform: uppercase;
-    z-index: 1;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .pause {
-    width: 48px;
-    height: 40px;
-    background-color: rgb(211 211 211 / 11%);
-    padding: 8px;
-    border-radius: 0.5em;
-  }
-  
-  .footerBCG {
-    width: 100%;
-    height: 100px;
-    background-color: #181818;
-    color: #fff;
-    font-size: 17px;
-    font-family: "Hind";
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .footerBCG a {
-    margin-left: 25px;
-    background-color: #242424;
-    border-radius: 0.25rem;
-    color: #f5f5f5;
-    display: inline-block;
-    font-family: "Hind";
-    font-weight: 700;
-    font-size: 0.875rem;
-    font-weight: 700;
-    padding: 0.625rem 0.75rem;
-    cursor: pointer;
-  }
-  
-  .react {
-    color: rgb(236, 54, 85);
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.95;
+}
+
+.highlightCallWrapper {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.highlightCallContent {
+  height: 30%;
+}
+
+.highlightCallTitle {
+  font-family: "Canal+";
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.highlightCallDetail {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  margin: 20px auto;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.highlightCallBtn {
+  background-color: #ec3655;
+  border-radius: 4px;
+  color: rgb(245, 245, 245);
+  display: flex;
+  align-items: center;
+  font-family: "Canal+";
+  font-size: 18px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
+
+.videoControlsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.controlsBtn {
+  width: 40px;
+  height: 35px;
+  background-color: rgb(211 211 211 / 11%);
+  padding: 8px;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.footerBCG {
+  width: 100%;
+  height: 100px;
+  background-color: #181818;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Hind";
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footerBCG a {
+  margin-left: 25px;
+  background-color: #242424;
+  border-radius: 0.25rem;
+  color: #f5f5f5;
+  display: inline-block;
+  font-family: "Hind";
+  font-weight: 700;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.625rem 0.75rem;
+  cursor: pointer;
+}
+
+.react {
+  color: rgb(236, 54, 85);
+}
