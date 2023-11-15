@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Canal+";
+    src: url("./fonts/Canal-BoldItal.eot");
+    src: url("./fonts/Canal-BoldItal.eot?#iefix") format("embedded-opentype"),
+      url("./fonts/Canal-BoldItal.woff2") format("woff2"),
+      url("./fonts/Canal-BoldItal.woff") format("woff"),
+      url("./fonts/Canal-BoldItal.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Hind";
+    src: url("./fonts/Hind-Bold.eot");
+    src: url("./fonts/Hind-Bold.eot?#iefix") format("embedded-opentype"),
+      url("./fonts/Hind-Bold.woff2") format("woff2"),
+      url("./fonts/Hind-Bold.woff") format("woff"),
+      url("./fonts/Hind-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Hind";
+    src: url("./fonts/Hind-Regular.eot");
+    src: url("./fonts/Hind-Regular.eot?#iefix") format("embedded-opentype"),
+      url("./fonts/Hind-Regular.woff2") format("woff2"),
+      url("./fonts/Hind-Regular.woff") format("woff"),
+      url("./fonts/Hind-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Hind";
+    src: url("./fonts/Hind-Regular_1.eot");
+    src: url("./fonts/Hind-Regular_1.eot?#iefix") format("embedded-opentype"),
+      url("./fonts/Hind-Regular_1.woff2") format("woff2"),
+      url("./fonts/Hind-Regular_1.woff") format("woff"),
+      url("./fonts/Hind-Regular_1.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Hind";
+    src: url("./fonts/Hind-SemiBold.eot");
+    src: url("./fonts/Hind-SemiBold.eot?#iefix") format("embedded-opentype"),
+      url("./fonts/Hind-SemiBold.woff2") format("woff2"),
+      url("./fonts/Hind-SemiBold.woff") format("woff"),
+      url("./fonts/Hind-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
+  }
+  

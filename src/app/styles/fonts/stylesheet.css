@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Canal+';
+    src: url('Canal-BoldItal.eot');
+    src: url('Canal-BoldItal.eot?#iefix') format('embedded-opentype'),
+        url('Canal-BoldItal.woff2') format('woff2'),
+        url('Canal-BoldItal.woff') format('woff'),
+        url('Canal-BoldItal.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind';
+    src: url('Hind-Bold.eot');
+    src: url('Hind-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Hind-Bold.woff2') format('woff2'),
+        url('Hind-Bold.woff') format('woff'),
+        url('Hind-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind';
+    src: url('Hind-Regular.eot');
+    src: url('Hind-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Hind-Regular.woff2') format('woff2'),
+        url('Hind-Regular.woff') format('woff'),
+        url('Hind-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind';
+    src: url('Hind-Regular_1.eot');
+    src: url('Hind-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('Hind-Regular_1.woff2') format('woff2'),
+        url('Hind-Regular_1.woff') format('woff'),
+        url('Hind-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind';
+    src: url('Hind-SemiBold.eot');
+    src: url('Hind-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Hind-SemiBold.woff2') format('woff2'),
+        url('Hind-SemiBold.woff') format('woff'),
+        url('Hind-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

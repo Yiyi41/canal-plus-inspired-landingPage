@@ -1,0 +1,91 @@
+.headerContainer {
+  font-family: "Hind";
+  max-width: 95%;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 7fr 3fr;
+  gap: 0px 0px;
+  padding-top: 2em;
+}
+
+.logoContainer {
+  /* border: orangered 1px solid; */
+  display: flex;
+  justify-self: flex-start;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: 2em;
+}
+
+.navBar {
+  /* border: green 1px solid; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2em;
+}
+
+.menu {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu li {
+  color: white;
+  list-style: none;
+  cursor: pointer;
+  font-family: 2rem;
+}
+
+.menu li:hover {
+  color: #ec3655;
+  transition: color ease-in-out 300ms;
+}
+
+.userContainer {
+  /* border: solid 1px blue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: flex-end;
+  gap: 1em;
+}
+
+.subscribetBtn {
+  border: none;
+  height: 2rem;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  background-color: #ec3655;
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "Canal+";
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.profilIconBCG,
+.searchIconContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilIconBCG {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.profilIcon {
+  padding: 5px;
+}
