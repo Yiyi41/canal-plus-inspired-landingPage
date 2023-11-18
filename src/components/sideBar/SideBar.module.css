@@ -1,0 +1,34 @@
+/* SideBar.module.css */
+
+.sideBar {
+  width: fit-content;
+  /* border: 1px solid hotpink; */
+  padding: 15px;
+  background-color: rgb(97 96 96 / 35%);
+  position: fixed;
+  right: -100;
+  transition: right 0.3s ease-in-out;
+}
+
+.sideBarDisplay {
+  right: 0;
+}
+
+.menuList {
+  color: white;
+  font-family: "Hind";
+  list-style: none;
+}
+.subscribetBtn {
+  border: none;
+  height: 2rem;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  background-color: #ec3655;
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "Canal+";
+  border-radius: 2px;
+  cursor: pointer;
+}

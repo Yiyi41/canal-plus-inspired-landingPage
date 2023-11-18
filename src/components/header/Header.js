@@ -1,56 +1,105 @@
+import { useEffect, useState, useLayoutEffect } from "react";
+
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "./Header.module.css";
-import logo from "public/canalplus-logo-v2.svg";
 import magnifiyingGlass from "./assets/magnifiying_glass_icon.svg";
 import userIcon from "./assets/user-solid.svg";
+import burgerMenu from "./assets/bars-solid.svg";
+
+import SideBar from "../sideBar/SideBar";
 
 export default function Header() {
+  const [windowWidth, setWindowWidth] = useState(null);
+  const [openSideBar, setOpenSideBar] = useState(false);
+
+  const breakPoint = 996;
+
+  const isWindow = typeof window !== "undefined";
+
+  const getWidth = () => (isWindow ? window.innerWidth : windowWidth);
+
+  const resize = () => setWindowWidth(getWidth());
+
+  useEffect(() => {
+    if (isWindow) {
+      setWindowWidth(getWidth());
+
+      window.addEventListener("resize", resize);
+
+      return () => window.removeEventListener("resize", resize);
+    }
+  }, [isWindow]);
+
+  const handleOpenSideBar = () => {
+    setOpenSideBar((prevState) => !prevState);
+  };
+
   return (
-    <div className={styles.headerContainer}>
-      <div className={styles.logoContainer}>
-        <Image
-          src={logo}
-          width={50}
-          height={50}
-          alt="logo canal plus"
-          className={styles.logo}
-        />
-      </div>
-
-      <nav className={styles.navBar}>
-        <ul className={styles.menu}>
-          <li>Nos Créations</li>
-          <li>Cinéma</li>
-          <li>Séries</li>
-          <li>Sport</li>
-          <li>Docs</li>
-          <li>Jeunesse</li>
-          <li>Chaînes</li>
-        </ul>
-      </nav>
-      <div className={styles.userContainer}>
-        <div className={styles.searchIconContainer}>
-          <Image
-            src={magnifiyingGlass}
-            width={25}
-            height={25}
-            alt="search icon"
-            className={styles.searchIcon}
-          />
+    <>
+      <header className={styles.headerContainer}>
+        <div className={styles.logoContainer}>
+          <span className={styles.logo}>Yiyi Plantinet</span>
         </div>
 
-        <button className={styles.subscribetBtn}>S'ABONNER</button>
-        <div className={styles.profilIconBCG}>
-          <Image
-            src={userIcon}
-            width={30}
-            height={30}
-            alt="user profil icon"
-            className={styles.profilIcon}
-          />
-        </div>
-      </div>
-    </div>
+        <nav className={styles.navBar}>
+          <ul className={styles.menu}>
+            <li>React</li>
+            <li>NextJS</li>
+            <li>React Native</li>
+            <li>Typescript</li>
+            <li>Nodejs</li>
+            <li>Sass</li>
+            <li>MongoDB</li>
+          </ul>
+        </nav>
+
+        {windowWidth <= breakPoint ? (
+          <div className={styles.userContainer}>
+            <Image
+              className={styles.menuBurger}
+              src={burgerMenu}
+              width={25}
+              height={25}
+              alt="burger menu icon"
+              onClick={handleOpenSideBar}
+            />
+          </div>
+        ) : (
+          <div className={styles.userContainer}>
+            <div className={styles.searchIconContainer}>
+              <Image
+                src={magnifiyingGlass}
+                width={25}
+                height={25}
+                alt="search icon"
+                className={styles.searchIcon}
+              />
+            </div>
+
+            <Link
+              className={styles.subscribetBtn}
+              href="https://github.com/Yiyi41"
+              target="_blank"
+            >
+              Github
+            </Link>
+            <div className={styles.profilIconBCG}>
+              <Image
+                src={userIcon}
+                width={30}
+                height={30}
+                alt="user profil icon"
+                className={styles.profilIcon}
+              />
+            </div>
+          </div>
+        )}
+      </header>
+      {openSideBar ? (
+        <SideBar openSideBar={openSideBar} setOpenSideBar={setOpenSideBar} />
+      ) : null}
+    </>
   );
 }
