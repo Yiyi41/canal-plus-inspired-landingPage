@@ -1,17 +1,14 @@
 /* SideBar.module.css */
 
 .sideBar {
-  width: fit-content;
+  width: 500px;
   /* border: 1px solid hotpink; */
   padding: 15px;
   background-color: rgb(97 96 96 / 35%);
   position: fixed;
-  right: -100;
-  transition: right 0.3s ease-in-out;
-}
-
-.sideBarDisplay {
   right: 0;
+  /* top: 0; */
+  transition: tranform 400ms ease-in-out;
 }
 
 .menuList {
@@ -19,9 +16,10 @@
   font-family: "Hind";
   list-style: none;
 }
-.subscribetBtn {
+.subscribeBtn {
   border: none;
   height: 2rem;
+  width: fit-content;
   padding: 8px;
   display: flex;
   align-items: center;

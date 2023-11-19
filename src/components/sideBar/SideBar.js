@@ -9,13 +9,10 @@ function isOutsideClick(ref) {
   useEffect(() => {
     function handleClickOutside(e) {
       // console.log("ref.current", ref);
-      // console.log("e.clientY", e.clientY);
-      // console.log("ref.current.offsetHeight", ref.current.offsetHeight);
+      // console.log("e.clientX", e.clientX);
+      // console.log("ref.current.offsetLeft", ref.current.offsetLeft);
       if (!ref.current) return;
-      if (
-        e.clientX < ref.current.offsetLeft ||
-        e.clientY > ref.current.offsetHeight
-      ) {
+      if (e.clientX > ref.current.offsetLeft || e.clientY > 300) {
         setIsClicked(true);
       } else {
         setIsClicked(false);
@@ -35,6 +32,8 @@ function SideBar({ openSideBar, setOpenSideBar }) {
   const sideBarRef = useRef(null);
   const outsideOfSidebarIsClicked = isOutsideClick(sideBarRef);
 
+  const displayStyle = openSideBar ? "translateX(350px)" : "translateX(0)";
+
   const closeSideBar = () => {
     if (openSideBar) {
       setOpenSideBar(false);
@@ -51,10 +50,9 @@ function SideBar({ openSideBar, setOpenSideBar }) {
   return (
     <>
       <div
-        className={`${styles.sideBar} ${
-          openSideBar ? styles.sideBarDisplay : ""
-        }`}
+        className={styles.sideBar}
         ref={sideBarRef}
+        style={{ transform: displayStyle }}
       >
         <ul className={styles.menuList}>
           <li>React</li>
@@ -65,7 +63,7 @@ function SideBar({ openSideBar, setOpenSideBar }) {
           <li>Sass</li>
           <li>MongoDB</li>
           <Link
-            className={styles.subscribetBtn}
+            className={styles.subscribeBtn}
             href="https://github.com/Yiyi41"
             target="_blank"
           >

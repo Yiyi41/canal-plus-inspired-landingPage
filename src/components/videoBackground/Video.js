@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,6 +15,8 @@ import Header from "../header/Header";
 export default function Video() {
   const [isPlay, setIsPlay] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
+
+  const [showHighlight, setShowHighlight] = useState(false);
 
   const videoRef = useRef(null);
 
@@ -31,6 +33,14 @@ export default function Video() {
     setIsPlay(true);
   };
 
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowHighlight(true);
+    }, 5000);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
     <>
       <Header />
@@ -46,66 +56,68 @@ export default function Video() {
         >
           <source src={videoURL} type="video/mp4" />
         </video>
-        <div className={styles.highlightCallWrapper}>
-          <div className={styles.highlightCallContent}>
-            <span className={styles.highlightCallTitle}>
-              ne confiez pas votre rêve à n'importe qui
-            </span>
-            <p className={styles.highlightCallDetail}>
-              Profitez de mes compétences techniques ainsi que mes compétences
-              humaines et transversales !
-            </p>
-            <div className={styles.btnWrapper}>
-              <Link
-                href="https://www.linkedin.com/in/yiyi-plantinet/"
-                className={styles.highlightCallBtn}
-              >
-                DECOUVRIR MON PROFIL
-              </Link>
-              <div className={styles.videoControlsWrapper}>
-                {isPlay ? (
-                  <Image
-                    className={styles.controlsBtn}
-                    src={pauseIcon}
-                    width={50}
-                    height={50}
-                    alt="play video button"
-                    onClick={handlePause}
-                  />
-                ) : (
-                  <Image
-                    className={styles.controlsBtn}
-                    src={playIcon}
-                    width={50}
-                    height={50}
-                    alt="pause video button"
-                    onClick={handlePlay}
-                  />
-                )}
+        {showHighlight && (
+          <div className={styles.highlightCallWrapper}>
+            <div className={styles.highlightCallContent}>
+              <span className={styles.highlightCallTitle}>
+                ne confiez pas votre rêve à n'importe qui
+              </span>
+              <p className={styles.highlightCallDetail}>
+                Profitez de mes compétences techniques ainsi que mes compétences
+                humaines et transversales !
+              </p>
+              <div className={styles.btnWrapper}>
+                <Link
+                  href="https://www.linkedin.com/in/yiyi-plantinet/"
+                  className={styles.highlightCallBtn}
+                >
+                  DECOUVRIR MON PROFIL
+                </Link>
+                <div className={styles.videoControlsWrapper}>
+                  {isPlay ? (
+                    <Image
+                      className={styles.controlsBtn}
+                      src={pauseIcon}
+                      width={50}
+                      height={50}
+                      alt="play video button"
+                      onClick={handlePause}
+                    />
+                  ) : (
+                    <Image
+                      className={styles.controlsBtn}
+                      src={playIcon}
+                      width={50}
+                      height={50}
+                      alt="pause video button"
+                      onClick={handlePlay}
+                    />
+                  )}
 
-                {isMuted ? (
-                  <Image
-                    className={styles.controlsBtn}
-                    src={silenceIcon}
-                    width={50}
-                    height={50}
-                    alt="mute video button"
-                    onClick={() => setIsMuted(false)}
-                  />
-                ) : (
-                  <Image
-                    className={styles.controlsBtn}
-                    src={soundIcon}
-                    width={50}
-                    height={50}
-                    alt="with video sound button"
-                    onClick={() => setIsMuted(true)}
-                  />
-                )}
+                  {isMuted ? (
+                    <Image
+                      className={styles.controlsBtn}
+                      src={silenceIcon}
+                      width={50}
+                      height={50}
+                      alt="mute video button"
+                      onClick={() => setIsMuted(false)}
+                    />
+                  ) : (
+                    <Image
+                      className={styles.controlsBtn}
+                      src={soundIcon}
+                      width={50}
+                      height={50}
+                      alt="with video sound button"
+                      onClick={() => setIsMuted(true)}
+                    />
+                  )}
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
       <div className={styles.footerBCG}>
         <span className={styles.footerTitle}>
