@@ -64,7 +64,7 @@ export default function Video() {
               </span>
               <p className={styles.highlightCallDetail}>
                 Profitez de mes compétences techniques ainsi que mes compétences
-                humaines et transversales !
+                humaines et transversales!
               </p>
               <div className={styles.btnWrapper}>
                 <Link
