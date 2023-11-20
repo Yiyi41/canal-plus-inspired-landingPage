@@ -131,7 +131,7 @@
     color: white;
     position: absolute;
     display: block;
-    bottom: -350px;
+    bottom: -60%;
   }
 
   .highlightCallTitle {
@@ -143,7 +143,7 @@
   }
 
   .highlightCallBtn {
-    font-size: 15px;
+    font-size: 12px;
     padding: 0 8px;
   }
 
@@ -151,16 +151,37 @@
     margin-top: 40px;
   }
 
+  .controlsBtn {
+    width: 40px;
+    aspect-ratio: 1/1;
+  }
+
   .footerBCG {
     flex-direction: column;
-    font-size: 15px;
+    font-size: 14px;
     gap: 5px;
     height: 80px;
-    position: fixed;
   }
+
   .footerBCG a {
     margin-left: 0;
     font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 390px) {
+  .highlightCallWrapper {
+    bottom: -50%;
+  }
+
+  .footerBCG {
+    font-size: 13px;
+  }
+
+  .footerBCG a {
+    margin-left: 0;
+    font-size: 12px;
     padding: 8px 10px;
   }
 }
