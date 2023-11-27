@@ -1,10 +1,6 @@
 # Canal+ inspired resume
 
-## Background Video Landing Page
-
-<p align="center" >
-<img align="center" width="1000" src="https://res.cloudinary.com/dps4zteie/image/upload/v1701092677/Capture_d_e%CC%81cran_2023-11-27_a%CC%80_14.43.25_td14nq.png"/>
-</p>
+[To Visit the app 👀](https://canal-plus-inspired-landing-page.vercel.app/) and discover more about my profile.
 
 ### Overview
 
@@ -20,10 +16,6 @@ This project serves as a POC where I explored the implementation of a background
 
 The application is deployed on [Vercel](https://vercel.com/), providing a live preview of the landing page.
 
-### How to Access
-
-To view the landing page, [Visit the app 👀](https://canal-plus-inspired-landing-page.vercel.app/) and discover more about my profile.
-
 ### Technologies Used
 
 - [Next.js](https://nextjs.org/)
@@ -32,6 +24,10 @@ To view the landing page, [Visit the app 👀](https://canal-plus-inspired-landi
 ### Acknowledgements
 
 This project is a result of experimentation and practice in web development. Feel free to explore the code and provide feedback.
+
+<p align="left" >
+<img align="left" width="1000" src="https://res.cloudinary.com/dps4zteie/image/upload/v1701092677/Capture_d_e%CC%81cran_2023-11-27_a%CC%80_14.43.25_td14nq.png"/>
+</p>
 
 
 
