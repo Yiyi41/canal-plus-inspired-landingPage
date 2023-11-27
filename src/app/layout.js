@@ -4,10 +4,10 @@ import "./styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Canal+ landing page clone",
+  title: "Canal+ inspired",
   description: "Inspired by canal+ landing page",
   icons: {
-    icon: "/canalplus-logo-v2.svg"
+    icon: "/canal.png"
   }
 };
 
