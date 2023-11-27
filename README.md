@@ -1,6 +1,6 @@
 # Canal+ inspired resume
 
-[To Visit the app 👀](https://canal-plus-inspired-landing-page.vercel.app/) and discover more about my profile.
+[To Visit the app 👀 ](https://canal-plus-inspired-landing-page.vercel.app/) and discover more about my profile.
 
 ### Overview
 
