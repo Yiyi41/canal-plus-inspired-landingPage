@@ -68,7 +68,8 @@ export default function Video() {
               </p>
               <div className={styles.btnWrapper}>
                 <Link
-                  href="https://www.linkedin.com/in/yiyi-plantinet/"
+                  href="https://drive.google.com/file/d/1eV2GkBE339iOX760ipyu7pUD1mysGm11/view?usp=drive_link"
+                  target="_blank"
                   className={styles.highlightCallBtn}
                 >
                   DECOUVRIR MON PROFIL
