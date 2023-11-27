@@ -1,6 +1,6 @@
 *<h1>Canal+ inspired resume</h1>*
 
-Overview
+##Overview
 
 *<h2 >This project serves as a Proof of Concept (POC) where I explored the implementation of a background video feature for a landing page. Drawing inspiration from the design of Canal+ home page, I crafted this landing page to invite users to explore my profile. </h2>*
 
