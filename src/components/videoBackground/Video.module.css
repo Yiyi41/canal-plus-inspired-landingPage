@@ -132,6 +132,7 @@
     position: absolute;
     display: block;
     bottom: -60%;
+    margin-bottom: 30%;
   }
 
   .highlightCallTitle {
