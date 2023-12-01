@@ -68,7 +68,7 @@ export default function Video() {
               </p>
               <div className={styles.btnWrapper}>
                 <Link
-                  href="https://drive.google.com/file/d/1HyYXAHqWxRDzZQxfFacaGbrM_5oiKtXD/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1gN_Ts-FO_jw115w18Nu39e3GKGo8MRqj/view?usp=sharing"
                   target="_blank"
                   className={styles.highlightCallBtn}
                 >
